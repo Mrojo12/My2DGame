@@ -28,7 +28,7 @@ public class GamePanel extends JPanel implements Runnable{
 
     // SYSTEM
     TileManager tileM = new TileManager(this);
-    KeyHandler keyHandler = new KeyHandler(this);
+    public KeyHandler keyHandler = new KeyHandler(this);
     Thread gameThread; // Hilo del juego
     Sound music = new Sound();
     Sound se = new Sound();
@@ -45,6 +45,7 @@ public class GamePanel extends JPanel implements Runnable{
     public int gameState;
     public final int playState = 1;
     public final int pauseState = 2;
+    public final int dialogueState = 3;
 
     public GamePanel() {
         this.setPreferredSize(new Dimension(screenWidth, screenHeight));
