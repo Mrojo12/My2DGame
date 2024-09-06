@@ -13,8 +13,6 @@ public class UI {
 
     public boolean messageOn = false;
     public String message = "";
-    int messageCounter = 0;
-    public boolean gameFinished = false;
     public String currentDialogue = "";
 
     public UI(GamePanel gp) {
@@ -22,11 +20,6 @@ public class UI {
 
         arial_40 = new Font("Arial", Font.PLAIN, 40);
         arial_80B = new Font("Arial", Font.BOLD, 80);
-    }
-
-    public void showMessage(String text){
-        message = text;
-        messageOn = true;
     }
 
     public void draw(Graphics2D g2){
